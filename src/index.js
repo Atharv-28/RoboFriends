@@ -8,10 +8,10 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <div>
-      <Card name="test" />
-      <Card name="best" />
-      <Card name="rest" />
-      <Card name="v9est" />
+      <Card name="test" rname="da" />
+      <Card name="best" rname="da" />
+      <Card name="rest" rname="da" />
+      <Card name="vest" rname="da" />
     </div>
   </React.StrictMode>
 );
