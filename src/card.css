@@ -5,7 +5,8 @@
     align-items: center;
     border-radius: 30px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    width: 18vw;
+    min-width: 340px;
+    max-width: 340px;
     background-color: #e0ffff;
 }
 .card-div:hover{
