@@ -9,30 +9,16 @@ const App = () => {
 
     const [robots, setRobots] = useState([])
     const [searchfield, setSearchfield] = useState("")
-    // constructor(){
-    //     super()
-    //     this.state = {
-    //         robots: [],
-    //         searchfield: ''
-    //     }
-    // }
+
     useEffect(()=>{
         fetch('https://jsonplaceholder.typicode.com/users')
         .then( response=> response.json())
         .then( users => {setRobots(users)});
     },[])
-    // componentDidMount(){
-    //     fetch('https://jsonplaceholder.typicode.com/users')
-    //     .then( response=> response.json())
-    //     .then( users => this.setState({robots:users}));
-    // }
 
     const onSearch = (event) => {
         setSearchfield(event.target.value)
     }
-
-
-
 
     const filteredRobots = robots.filter(robots => {
         return robots.name.toLowerCase().includes(searchfield.toLowerCase())
